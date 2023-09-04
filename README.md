@@ -1,2 +1,2 @@
 # Jap-AFan
-Distintas carpetas con diferentes ejercicios del programa Jóvenes a Programar
+Distintas carpetas con diferentes ejercicios de fase 2 - Jóvenes a Programar
