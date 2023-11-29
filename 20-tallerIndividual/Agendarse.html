@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="estilos.css">
+
+  <title>Clinica de Diagnostico Imagenologico</title>
+
+  <!--<link rel="stylesheet" href="estilos.css">-->
+
+  <!-- Agrega aquí tus enlaces a hojas de estilo (CSS) o scripts (JavaScript) -->
+  <!-- Por ejemplo: <link rel="stylesheet" href="styles.css"> -->
+
+</head>
+
+<body>
+    <div>
+        <h4>Tipo de Imagen</h4>
+        <div id="imagenDiagnostica">
+            <div class="group-container">
+                <div class="label-container">
+                <label>
+                    <input type="radio" name="opcion" value="opcion1" required>
+                    Radiografía
+                </label>
+                </div>
+            
+                <div class="label-container">
+                <label><input type="radio" name="opcion" value="opcion2" required>
+                    Tomografía Computarizada</label>
+                </div>
+            
+                <div class="label-container">
+                <label><input type="radio" name="opcion" value="opcion3" required>
+                    Resonancia Magnética</label>
+                </div>
+            
+                <div class="label-container">
+                <label><input type="radio" name="opcion" value="opcion4" required>
+                    Ecografía</label>
+                </div>
+            
+                <div class="label-container">
+                <label><input type="radio" name="opcion" value="opcion5" required>
+                    Angiotomografía</label>
+                </div>
+            </div>
+        </div>      
+
+        <h4>Horarios Disponibles</h4>
+
+        <form>
+            <label for="fecha">Fecha:</label>
+            <input type="date" id="fecha" name="fecha" required>
+        
+            <label for="hora">Hora:</label>
+            <input type="time" id="hora" name="hora" required>
+        
+            <!-- Otros elementos del formulario -->
+        
+        </form>
+            
+        <h4>Informacion de Contacto</h4>
+        <form>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+        
+            <label for="contacto">Número de Contacto:</label>
+            <input type="tel" id="contacto" name="contacto" pattern="[0-9]{10}" placeholder="Ej. 1234567890" required>
+            <!--<small>Ingrese un número de 10 dígitos.</small>-->
+        </form>
+
+        <button type="submit">Agendarse</button>
+    </div>
+</body>
+
+</html>
